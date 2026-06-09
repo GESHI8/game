@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 文字エンコーディングとレスポンシブ対応 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 外部CSSとファビコンの読み込み -->
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>game</title>
+</head>
+<body>
+    <!-- ゲーム全体を囲うコンテナ -->
+    <div class="game-container">
+        <!-- プレイヤーキャラクター -->
+        <div class="character"></div>
+        <!-- 地面 -->
+        <div class="ground"></div>
+        <!-- 天井 -->
+        <div class="ceiling"></div>
+        <!-- 障害物（初期で5つ） -->
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+    </div>
+    <!-- ゲームのロジック -->
+    <script src="game.js"></script>
+</body>
+</html>

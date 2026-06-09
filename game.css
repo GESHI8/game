@@ -1,0 +1,77 @@
+/* 余白をなくし、スクロールを防止 */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* ゲーム画面の基礎設定（画面全体を使う） */
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+/* キャラクターの見た目と位置 */
+.character {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('image/character.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 25%;
+    /* 地面の上に立つように */
+    transform: scaleX(1);
+    /* 初期は右向き */
+}
+
+/* 地面の設定 */
+.ground {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: #535353;
+    bottom: 0;
+}
+
+/* 天井の設定 */
+.ceiling {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #535353;
+    top: 0;
+}
+
+/* 障害物の共通スタイル */
+.obstacle {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 各障害物の初期位置（あとでJSで動かす） */
+.obstacle:nth-child(1) {
+    right: 0;
+    bottom: 25%;
+}
+
+.obstacle:nth-child(2) {
+    right: 0;
+    bottom: 25%;
+}
+
+.obstacle:nth-child(3) {
+    right: 0;
+    bottom: 10px;
+}
+
+.obstacle:nth-child(4) {
+    right: 0;
+    bottom: 10px;
+}
